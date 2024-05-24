@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "618730314590",
+    "project_id": "hospital-e131b",
+    "storage_bucket": "hospital-e131b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:618730314590:android:841cf5d2dfb33117704dcf",
+        "android_client_info": {
+          "package_name": "com.example.hospital"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtqNyEkZ5UexqQzeZhNJmOiR3ljEX3yU8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

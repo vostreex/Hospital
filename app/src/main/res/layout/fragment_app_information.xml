@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppInformation"
+    android:background="@color/lavender_dark">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:justificationMode="inter_word"
+            android:text="Данное приложение создано для облегчения прохождения практики студентами медицинских колледжей и институтов. Эта тема является актуальной, так как существует необходимость в оптимизации процессов, связанных с ведением и управлением информацией о пациентах, а также в повышении эффективности обучения будущих медицинских работников.\n
+Приложение позволяет студентам-интернам ознакомиться со списком пациентов, их диагнозами и другими необходимыми данными, а докторам и администраторам - эффективно управлять информацией о пациентах и пользователях системы. Для достижения этой цели был проведен анализ требований к функционалу приложения и определён список ролей пользователей, разработана архитектура приложения и базы данных, реализован функционал для каждой роли пользователя, а также проведено тестирование и отладка приложения."/>
+
+
+    </ScrollView>
+
+</FrameLayout>

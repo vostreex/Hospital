@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="HardcodedText"
+    tools:context=".MainActivity"
+    android:background="#ADD8E6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginVertical="50dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/hospital_logo_snake" />
+
+        <Button
+            android:id="@+id/intern_btn"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="140dp"
+            android:backgroundTint="@color/light_blue"
+            android:onClick="GoOnLoginActivity"
+            android:text="Интерн"
+            app:icon="@drawable/student" />
+
+        <Button
+            android:id="@+id/doctor_btn"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/light_blue"
+            android:onClick="GoOnLoginActivity"
+            android:text="Доктор"
+            app:icon="@drawable/doctor" />
+
+        <Button
+            android:id="@+id/admin_btn"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/light_blue"
+            android:onClick="GoOnLoginActivity"
+            android:text="Администратор"
+            app:icon="@drawable/admin_with_cogwheels_svgrepo_com" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:onClick="GoOnInfoActivity"
+        android:id="@+id/imageButton"
+        android:layout_width="50dp"
+        android:backgroundTint="@color/lavender_dark"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/baseline_info_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

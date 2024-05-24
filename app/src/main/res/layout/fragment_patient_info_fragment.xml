@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lavender_dark"
+    android:padding="16dp"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/patientInfoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Информация о пациенте"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/patientDiagnosisTextView"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:backgroundTint="@color/light_blue" />
+
+        <TextView
+            android:id="@+id/patientPlanTextView"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/patientRecomendTextView"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/commentDiagnos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите диагноз"
+            android:maxLength="150"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/saveDiagnosButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/light_blue"
+            android:text="Сохранить диагноз" />
+
+        <EditText
+            android:id="@+id/commentPlan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите план лечения"
+            android:layout_marginBottom="16dp"
+            android:maxLength="150" />
+
+        <Button
+            android:id="@+id/savePlanButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/light_blue"
+            android:text="Сохранить план лечения" />
+
+        <EditText
+            android:id="@+id/commentEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите комментарий"
+            android:layout_marginBottom="16dp"
+            android:maxLength="150"/>
+
+        <Button
+            android:id="@+id/saveCommentButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/light_blue"
+            android:text="Сохранить комментарий" />
+
+    </LinearLayout>
+</ScrollView>

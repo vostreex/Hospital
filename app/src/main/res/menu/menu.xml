@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Creator"
+        android:title="Разработчик"
+        android:icon="@drawable/_289576_individual_man_people_person_107097"/>
+    <item
+        android:id="@+id/AppInfo"
+        android:title="О приложении"
+        android:icon="@drawable/help_information_support_instruction_icon_231836"/>
+
+</menu>

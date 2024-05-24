@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_empl_admin"
+    android:background="@color/lavender_dark"
+    android:clickable="true">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/FIO"
+                android:hint="Логин*"
+                android:maxLength="100" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Пароль*"
+                    android:maxLength="50" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/root"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Права доступа*"
+                        android:maxLength="15" />
+                    <Button
+                        android:id="@+id/AddPatient"
+                        android:layout_width="150dp"
+                        android:layout_gravity="center"
+                        android:layout_height="5dp"
+                        android:layout_weight="0.12"
+                        android:backgroundTint="@color/light_blue"
+                        android:text="Сохранить" />
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="15sp"
+                        android:text="Поля со * являются обязательными к заполнению" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+</FrameLayout>

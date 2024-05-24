@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ADD_PATIENT"
+    android:background="@color/lavender_dark"
+    android:clickable="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/FIO"
+                android:hint="ФИО*" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:counterMaxLength="100"
+                android:maxHeight="100dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/GENDER"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Пол*"
+                    android:maxLength="10" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Дата рождения*"
+                        android:maxLength="11" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/diagnos"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Диагноз*"
+                            android:maxLength="150" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/Plan"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="План лечения"
+                                android:maxLength="150" />
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/Recomendation"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Рекомендации"
+                                    android:maxLength="150" />
+
+                                <Button
+                                    android:id="@+id/AddPatient"
+                                    android:layout_width="150dp"
+                                    android:layout_gravity="center"
+                                    android:layout_height="15dp"
+                                    android:layout_weight="0.2"
+                                    android:backgroundTint="@color/light_blue"
+                                    android:text="Сохранить" />
+
+                                <TextView
+                                    android:id="@+id/textView2"
+                                    android:textColor="@color/black"
+                                    android:layout_gravity="center"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:textSize="15sp"
+                                    android:text="Поля со * являются обязательными к заполнению" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    </ScrollView>
+</FrameLayout>
