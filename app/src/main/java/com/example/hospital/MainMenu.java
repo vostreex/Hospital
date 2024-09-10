@@ -63,7 +63,6 @@ public class MainMenu extends AppCompatActivity implements OnPatientAddedListene
                 // Получаем выбранного пациента
                 int selectedId = (int) view.getTag();
                 selectedPatients.add(selectedId);
-                // Делаем что-то с выбранным пациентом, например, выделяем его в списке
             }
         });
 

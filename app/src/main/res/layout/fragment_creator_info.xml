@@ -21,9 +21,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
         android:layout_marginTop="350dp"
         android:textSize="20sp"
         android:textColor="@color/black"
         android:text="Останин Василий Олегович\nИКБО-07-22" />
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="410dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="По всем вопросам обращаться: vostan97@gmail.com" />
+
 
 </FrameLayout>
