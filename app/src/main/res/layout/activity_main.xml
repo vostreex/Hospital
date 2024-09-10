@@ -65,7 +65,7 @@
     </LinearLayout>
 
     <ImageButton
-        android:onClick="GoOnInfoActivity"
+
         android:id="@+id/imageButton"
         android:layout_width="50dp"
         android:backgroundTint="@color/lavender_dark"

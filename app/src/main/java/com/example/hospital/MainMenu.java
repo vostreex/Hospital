@@ -46,13 +46,13 @@ public class MainMenu extends AppCompatActivity implements OnPatientAddedListene
         deleteButton = findViewById(R.id.deleteBTN);
         addButton = findViewById(R.id.addBTN);
 
-        if (accessRights.equals("Intern")){
+        /*if (accessRights.equals("Intern")){
             deleteButton.setEnabled(false);
             addButton.setEnabled(false);
             deleteButton.setVisibility(View.GONE);
             addButton.setVisibility(View.GONE);
         }
-
+*/
         // Чтение данных из таблицы "Patients"
         loadPatientsList();
 
@@ -79,7 +79,7 @@ public class MainMenu extends AppCompatActivity implements OnPatientAddedListene
                 if (searchText.isEmpty()) {
                     loadPatientsList();
                 } else {
-                    searchPatients(searchText);
+                    searchPatients(""/*searchText*/);
                 }
             }
 

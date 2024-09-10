@@ -57,11 +57,11 @@ public class ADD_PATIENT extends Fragment {
                 String planText = plan.getText().toString();
                 String recomendationText = recomendation.getText().toString();
 
-                if (fioText.isEmpty() || genderText.isEmpty() || dateText.isEmpty() || diagnosText.isEmpty()) {
+                /*if (fioText.isEmpty() || genderText.isEmpty() || dateText.isEmpty() || diagnosText.isEmpty()) {
                     Toast.makeText(getActivity(), "Пожалуйста, заполните все обязательные поля (ФИО, Пол, Дата рождения, Диагноз)", Toast.LENGTH_SHORT).show();
                     return;
                 }
-
+                */
                 DBhelper_Patients dbHelper = new DBhelper_Patients(getActivity());
                 dbHelper.insertPatient(fioText, genderText, dateText, diagnosText, planText, recomendationText);
                 if (listener != null) {
